@@ -25,7 +25,9 @@ export function createScene(container) {
 
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
-  controls.minDistance = 7;
+  controls.minDistance = 8;
+  controls.autoRotate = true;
+  controls.autoRotateSpeed = 0.5;
   controls.maxDistance = 40;
   controls.enablePan = false;
 
