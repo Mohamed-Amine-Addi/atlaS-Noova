@@ -12,17 +12,24 @@
    "ar": "صامت على السطح"
   },
   "summary": {
-   "en": "Eagle's descent stage still stands in the Sea of Tranquility. It was the launch pad that sent Armstrong and Aldrin back up to orbit.",
-   "fr": "L'étage de descente d'Eagle se dresse toujours dans la mer de la Tranquillité. C'était la rampe de lancement qui a renvoyé Armstrong et Aldrin en orbite.",
-   "ar": "ما زالت مرحلة الهبوط في النسر قائمة في بحر الهدوء. كانت منصة الإطلاق التي أعادت أرمسترونغ وألدرين إلى المدار."
+   "en": "Eagle's descent stage remains on the Moon in the Sea of Tranquility. It served as the launch platform for the ascent stage, which carried Armstrong and Aldrin back into lunar orbit to reunite with Collins.",
+   "fr": "L'étage de descente d'Eagle reste sur la Lune, dans la mer de la Tranquillité. Il a servi de plateforme de lancement à l'étage de remontée, qui a ramené Armstrong et Aldrin en orbite lunaire pour retrouver Collins.",
+   "ar": "ما زالت مرحلة الهبوط في النسر على القمر في بحر الهدوء. كانت منصة الإطلاق لمرحلة الصعود التي أعادت أرمسترونغ وألدرين إلى المدار القمري ليلتقيا بكولينز."
   },
   "science": {
-   "en": "It proved humans could land on another world, collect samples and return safely.",
-   "fr": "Il a prouvé que des humains pouvaient se poser sur un autre monde, récolter des échantillons et rentrer sains et saufs.",
-   "ar": "أثبتت أن البشر قادرون على الهبوط على عالم آخر وجمع العينات والعودة سالمين."
+   "en": "It demonstrated that humans could land on another world, conduct scientific exploration, collect lunar samples and return safely to orbit.",
+   "fr": "Il a démontré que des humains pouvaient se poser sur un autre monde, mener des explorations scientifiques, récolter des échantillons lunaires et revenir sains et saufs en orbite.",
+   "ar": "أثبتت أن البشر قادرون على الهبوط على عالم آخر وإجراء استكشاف علمي وجمع عينات قمرية والعودة سالمين إلى المدار."
   },
   "sources": [
-   "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+   {
+    "title": "NASA – Apollo 11 Lunar Module / EASEP",
+    "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+   },
+   {
+    "title": "NASA – Apollo 11 Landing Site",
+    "url": "https://science.nasa.gov/resource/apollo-11-landing-site/"
+   }
   ],
   "image": "https://nssdc.gsfc.nasa.gov/planetary/image/ap11_lm_as11_40_5927.jpg"
  },
@@ -30,8 +37,8 @@
   "id": "alsep",
   "name": "ALSEP Apollo 12",
   "world": "moon",
-  "lat": -3.0,
-  "lon": -23.4,
+  "lat": -3.01,
+  "lon": -23.42,
   "year": 1969,
   "status": {
    "en": "Switched off in 1977",
@@ -39,17 +46,24 @@
    "ar": "أُوقف عام 1977"
   },
   "summary": {
-   "en": "A set of instruments left by astronauts: a seismometer, a magnetometer and a solar wind detector, powered by a small nuclear generator.",
-   "fr": "Un ensemble d'instruments laissés par les astronautes : sismomètre, magnétomètre et détecteur de vent solaire, alimentés par un petit générateur nucléaire.",
-   "ar": "مجموعة أدوات تركها رواد الفضاء: مقياس زلازل ومقياس مغناطيسي وكاشف للرياح الشمسية، تعمل بمولد نووي صغير."
+   "en": "A collection of six scientific experiments left behind by astronauts. It included a seismometer, magnetometer and solar wind spectrometer, powered by a plutonium-238 radioisotope generator.",
+   "fr": "Un ensemble de six expériences scientifiques laissées par les astronautes, dont un sismomètre, un magnétomètre et un spectromètre de vent solaire, alimentés par un générateur à radio-isotope au plutonium 238.",
+   "ar": "مجموعة من ست تجارب علمية تركها رواد الفضاء، منها مقياس زلازل ومقياس مغناطيسي ومطياف للرياح الشمسية، تعمل بمولد نظائر مشعة يعمل بالبلوتونيوم 238."
   },
   "science": {
-   "en": "It listened to moonquakes for years and showed the Moon is not completely dead inside.",
-   "fr": "Il a écouté les séismes lunaires pendant des années et montré que la Lune n'est pas totalement inerte à l'intérieur.",
-   "ar": "أصغت إلى الزلازل القمرية سنوات وأظهرت أن القمر ليس ميتًا تمامًا من الداخل."
+   "en": "It recorded moonquakes and seismic activity for years, revealing that the Moon has a complex and seismically active interior.",
+   "fr": "Il a enregistré des séismes lunaires et une activité sismique pendant des années, révélant que l'intérieur de la Lune est complexe et sismiquement actif.",
+   "ar": "سجّلت الزلازل القمرية والنشاط الزلزالي لسنوات، وكشفت أن لباطن القمر بنية معقدة ونشاطًا زلزاليًا."
   },
   "sources": [
-   "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C"
+   {
+    "title": "NASA – Apollo 12 Lunar Module / ALSEP",
+    "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C"
+   },
+   {
+    "title": "NASA – Apollo 12 Mission History",
+    "url": "https://www.nasa.gov/history/50-years-ago-apollo-12-one-month-from-launch/"
+   }
   ],
   "life": {
    "planned": 365,
@@ -60,8 +74,8 @@
   "id": "surveyor3",
   "name": "Surveyor 3",
   "world": "moon",
-  "lat": -2.9,
-  "lon": -23.0,
+  "lat": -3.0,
+  "lon": -23.41,
   "year": 1967,
   "status": {
    "en": "Parked since 1967",
@@ -69,19 +83,24 @@
    "ar": "متوقفة منذ 1967"
   },
   "summary": {
-   "en": "A robotic lander that scooped lunar soil with a small arm. Apollo 12 astronauts walked to it two years later and cut off parts to bring home.",
-   "fr": "Un atterrisseur robotique qui a creusé le sol lunaire avec un petit bras. Les astronautes d'Apollo 12 l'ont rejoint à pied deux ans plus tard et ont rapporté des pièces.",
-   "ar": "مركبة هبوط آلية جرفت تربة القمر بذراع صغيرة. وبعد عامين مشى إليها رواد أبولو 12 وقطعوا بعض أجزائها وأعادوها إلى الأرض."
+   "en": "A robotic lander that scooped lunar soil with a mechanical arm. More than two years later, Apollo 12 astronauts walked to it and recovered parts, including its camera system and soil scoop, to bring back to Earth.",
+   "fr": "Un atterrisseur robotique qui a prélevé du sol lunaire avec un bras mécanique. Plus de deux ans plus tard, les astronautes d'Apollo 12 ont marché jusqu'à lui et ont récupéré des pièces, dont son système de caméra et sa pelle à sol, pour les ramener sur Terre.",
+   "ar": "مركبة هبوط آلية جرفت تربة القمر بذراع ميكانيكية. وبعد أكثر من عامين مشى إليها رواد أبولو 12 واستعادوا أجزاء منها، منها نظام الكاميرا ومجرفة التربة، لإعادتها إلى الأرض."
   },
   "science": {
-   "en": "It showed the surface was firm enough to land on, which made Apollo possible.",
-   "fr": "Il a montré que la surface était assez solide pour s'y poser, ce qui a rendu Apollo possible.",
-   "ar": "أظهرت أن السطح صلب بما يكفي للهبوط، ما جعل برنامج أبولو ممكنًا."
+   "en": "It demonstrated that lunar soil could support an Apollo Lunar Module, helping engineers prepare for human lunar landings.",
+   "fr": "Il a démontré que le sol lunaire pouvait supporter un module lunaire Apollo, aidant les ingénieurs à préparer les alunissages habités.",
+   "ar": "أثبتت أن تربة القمر قادرة على تحمّل مركبة هبوط أبولو، ما ساعد المهندسين على الاستعداد لهبوط البشر على القمر."
   },
   "sources": [
-   "https://science.nasa.gov/mission/surveyor-3/"
+   {
+    "title": "NASA – Surveyor 3",
+    "url": "https://science.nasa.gov/mission/surveyor-3/"
+   }
   ],
-  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/as12-48-7134_1280.jpg"
+  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/as12-48-7134_1280.jpg",
+  "mlat": -3.0,
+  "mlon": -19.5
  },
  {
   "id": "lrv",
@@ -96,25 +115,42 @@
    "ar": "متوقفة إلى الأبد (ثلاث مركبات)"
   },
   "summary": {
-   "en": "Three electric moon buggies were left at the Apollo 15, 16 and 17 sites after astronauts drove them across the surface.",
-   "fr": "Trois buggies électriques ont été laissés sur les sites d'Apollo 15, 16 et 17 après avoir parcouru la surface avec les astronautes.",
-   "ar": "تُركت ثلاث مركبات قمرية كهربائية في مواقع أبولو 15 و16 و17 بعد أن قادها الرواد عبر السطح."
+   "en": "Three battery-powered electric Moon buggies were left at the Apollo 15, 16 and 17 landing sites. Astronauts drove them across the lunar surface, exploring distant geological features and collecting samples that would have been difficult to reach on foot.",
+   "fr": "Trois buggies lunaires électriques, alimentés par batteries, ont été laissés sur les sites d'alunissage d'Apollo 15, 16 et 17. Les astronautes les ont conduits à travers la surface lunaire pour explorer des formations géologiques lointaines et collecter des échantillons difficiles à atteindre à pied.",
+   "ar": "تُركت ثلاث مركبات قمرية كهربائية تعمل بالبطاريات في مواقع هبوط أبولو 15 و16 و17. قادها الرواد عبر سطح القمر لاستكشاف معالم جيولوجية بعيدة وجمع عينات يصعب الوصول إليها سيرًا على الأقدام."
   },
   "science": {
-   "en": "They let crews explore far from the lander and bring back samples from many different places.",
-   "fr": "Ils ont permis aux équipages de s'éloigner de l'atterrisseur et de rapporter des échantillons de nombreux endroits.",
-   "ar": "مكّنت الطواقم من استكشاف مواقع بعيدة عن المركبة والعودة بعينات من أماكن كثيرة."
+   "en": "They allowed astronauts to explore much farther from their landers, investigate diverse geological features and collect lunar samples from a wider area.",
+   "fr": "Ils ont permis aux astronautes de s'éloigner bien plus de leurs atterrisseurs, d'étudier des formations géologiques variées et de collecter des échantillons sur une zone plus vaste.",
+   "ar": "مكّنت الرواد من الابتعاد كثيرًا عن مركبات الهبوط ودراسة معالم جيولوجية متنوعة وجمع عينات قمرية من منطقة أوسع."
   },
   "sources": [
-   "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063C"
-  ]
+   {
+    "title": "NASA – The Apollo Lunar Roving Vehicle",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html"
+   },
+   {
+    "title": "NASA – Apollo 15 Mission Record",
+    "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063C"
+   },
+   {
+    "title": "NASA – Apollo Lunar Landings",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apolloland.html"
+   }
+  ],
+  "yearLabel": "1971–1972",
+  "place": {
+   "en": "Three locations: Apollo 15, Apollo 16 and Apollo 17 landing sites.",
+   "fr": "Trois emplacements : sites d'alunissage d'Apollo 15, 16 et 17.",
+   "ar": "ثلاثة مواقع: مواقع هبوط أبولو 15 و16 و17."
+  }
  },
  {
   "id": "viking1",
   "name": "Viking 1",
   "world": "mars",
-  "lat": 22.27,
-  "lon": -47.97,
+  "lat": 22.483,
+  "lon": -47.94,
   "year": 1976,
   "status": {
    "en": "Contact ended 1982",
@@ -122,17 +158,20 @@
    "ar": "انقطع الاتصال عام 1982"
   },
   "summary": {
-   "en": "The first successful U.S. Mars lander. It still sits where it touched down on the plains of Chryse.",
-   "fr": "Le premier atterrisseur américain réussi sur Mars. Il se trouve toujours là où il s'est posé, dans la plaine de Chryse.",
-   "ar": "أول مركبة هبوط أمريكية ناجحة على المريخ. ما زالت في المكان الذي هبطت فيه على سهول كريسي."
+   "en": "The first truly successful U.S. Mars lander. It still rests where it touched down on the plains of Chryse Planitia.",
+   "fr": "Le premier atterrisseur américain vraiment réussi sur Mars. Il repose toujours là où il s'est posé, dans la plaine de Chryse Planitia.",
+   "ar": "أول مركبة هبوط أمريكية ناجحة حقًا على المريخ. ما زالت ترقد حيث هبطت على سهول كريسي بلانيتيا."
   },
   "science": {
-   "en": "It sent the first color photos from the surface and tested the soil for signs of life.",
-   "fr": "Il a envoyé les premières photos en couleur de la surface et testé le sol à la recherche de signes de vie.",
-   "ar": "أرسلت أول صور ملونة من سطح المريخ واختبرت التربة بحثًا عن علامات الحياة."
+   "en": "It sent the first images from the surface of Mars, including color photographs, and tested Martian soil for signs of life. Its experiments did not confirm the presence of life.",
+   "fr": "Il a envoyé les premières images de la surface de Mars, dont des photos en couleur, et testé le sol martien à la recherche de signes de vie. Ses expériences n'ont pas confirmé la présence de vie.",
+   "ar": "أرسلت أولى الصور من سطح المريخ، ومنها صور ملونة، واختبرت تربته بحثًا عن علامات الحياة. ولم تؤكد تجاربها وجود حياة."
   },
   "sources": [
-   "https://science.nasa.gov/mission/viking-1/"
+   {
+    "title": "NASA — Viking 1",
+    "url": "https://science.nasa.gov/mission/viking-1/"
+   }
   ],
   "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/Viking_1_First_Image_From_Mars_1280.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
   "life": {
@@ -175,8 +214,8 @@
   "id": "sojourner",
   "name": "Sojourner",
   "world": "mars",
-  "lat": 19.13,
-  "lon": -33.25,
+  "lat": 19.33,
+  "lon": -33.55,
   "year": 1997,
   "status": {
    "en": "Parked since 1997",
@@ -184,17 +223,28 @@
    "ar": "متوقف منذ 1997"
   },
   "summary": {
-   "en": "The first rover on Mars, about the size of a microwave oven. It drove out of the Pathfinder lander and tested rocks with its X-ray instrument.",
-   "fr": "Le premier rover sur Mars, de la taille d'un four à micro-ondes. Il est sorti de l'atterrisseur Pathfinder et a analysé des roches avec son instrument à rayons X.",
-   "ar": "أول مركبة جوالة على المريخ، بحجم فرن ميكروويف. خرجت من مركبة باثفايندر وفحصت الصخور بجهاز الأشعة السينية."
+   "en": "The first wheeled robotic rover on Mars, about the size of a microwave oven. It rolled out of the Pathfinder lander and analyzed Martian rocks and soil using its Alpha Proton X-ray Spectrometer.",
+   "fr": "Le premier rover à roues sur Mars, de la taille d'un four à micro-ondes. Il est sorti de l'atterrisseur Pathfinder et a analysé roches et sol martiens avec son spectromètre à rayons X à particules alpha et protons.",
+   "ar": "أول مركبة جوالة ذات عجلات على المريخ، بحجم فرن ميكروويف. خرجت من مركبة باثفايندر وحلّلت صخور المريخ وتربته بمطياف الأشعة السينية لجسيمات ألفا والبروتونات."
   },
   "science": {
-   "en": "It proved that small wheeled robots can explore Mars and study its rocks up close.",
-   "fr": "Il a prouvé que de petits robots à roues peuvent explorer Mars et étudier ses roches de près.",
-   "ar": "أثبتت أن الروبوتات الصغيرة ذات العجلات تستطيع استكشاف المريخ ودراسة صخوره عن قرب."
+   "en": "It demonstrated that small wheeled robots could explore Mars, navigate its rocky terrain, and analyze rocks and soil up close.",
+   "fr": "Il a démontré que de petits robots à roues pouvaient explorer Mars, naviguer sur son terrain rocheux et analyser roches et sol de près.",
+   "ar": "أثبتت أن الروبوتات الصغيرة ذات العجلات تستطيع استكشاف المريخ والتنقل في تضاريسه الصخرية وتحليل صخوره وتربته عن قرب."
   },
   "sources": [
-   "https://science.nasa.gov/mission/mars-pathfinder/"
+   {
+    "title": "NASA — Mars Pathfinder",
+    "url": "https://science.nasa.gov/mission/mars-pathfinder/"
+   },
+   {
+    "title": "NASA — Sojourner & Terrain",
+    "url": "https://science.nasa.gov/resource/sojourner-terrain/"
+   },
+   {
+    "title": "NASA — Mars Pathfinder Project Information",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/mesur.html"
+   }
   ],
   "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/pathfinder20160226-16.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
   "life": {
