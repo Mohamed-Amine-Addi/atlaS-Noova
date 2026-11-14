@@ -50,7 +50,11 @@
   },
   "sources": [
    "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C"
-  ]
+  ],
+  "life": {
+   "planned": 365,
+   "actual": 2872
+  }
  },
  {
   "id": "surveyor3",
@@ -130,7 +134,11 @@
   "sources": [
    "https://science.nasa.gov/mission/viking-1/"
   ],
-  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/Viking_1_First_Image_From_Mars_1280.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/Viking_1_First_Image_From_Mars_1280.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+  "life": {
+   "planned": 90,
+   "actual": 2305
+  }
  },
  {
   "id": "viking2",
@@ -157,7 +165,11 @@
   "sources": [
    "https://science.nasa.gov/mission/viking-1/"
   ],
-  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/internal_resources/3514/Viking_Lander_Line_Drawing-1.jpeg"
+  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/internal_resources/3514/Viking_Lander_Line_Drawing-1.jpeg",
+  "life": {
+   "planned": 90,
+   "actual": 1316
+  }
  },
  {
   "id": "sojourner",
@@ -184,7 +196,11 @@
   "sources": [
    "https://science.nasa.gov/mission/mars-pathfinder/"
   ],
-  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/pathfinder20160226-16.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/pathfinder20160226-16.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+  "life": {
+   "planned": 7,
+   "actual": 83
+  }
  },
  {
   "id": "spirit",
@@ -210,7 +226,11 @@
   },
   "sources": [
    "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/"
-  ]
+  ],
+  "life": {
+   "planned": 90,
+   "actual": 2269
+  }
  },
  {
   "id": "opportunity",
@@ -236,7 +256,11 @@
   },
   "sources": [
    "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/"
-  ]
+  ],
+  "life": {
+   "planned": 90,
+   "actual": 5250
+  }
  },
  {
   "id": "phoenix",
@@ -262,7 +286,11 @@
   },
   "sources": [
    "https://science.nasa.gov/mission/insight/"
-  ]
+  ],
+  "life": {
+   "planned": 90,
+   "actual": 161
+  }
  },
  {
   "id": "insight",
@@ -288,7 +316,11 @@
   },
   "sources": [
    "https://science.nasa.gov/mission/insight/"
-  ]
+  ],
+  "life": {
+   "planned": 687,
+   "actual": 1486
+  }
  },
  {
   "id": "ingenuity",
@@ -315,7 +347,11 @@
   "sources": [
    "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
   ],
-  "image": "https://assets.science.nasa.gov/content/dam/science/psd/mars/downloadable_items/4/5/45954_PIA24581.jpg"
+  "image": "https://assets.science.nasa.gov/content/dam/science/psd/mars/downloadable_items/4/5/45954_PIA24581.jpg",
+  "life": {
+   "planned": 30,
+   "actual": 1004
+  }
  },
  {
   "id": "pioneer10",
@@ -342,7 +378,11 @@
   "sources": [
    "https://science.nasa.gov/mission/pioneer-10/"
   ],
-  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/internal_resources/731/Illustrated_Pioneer_10_at_Jupiter.jpeg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/internal_resources/731/Illustrated_Pioneer_10_at_Jupiter.jpeg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+  "life": {
+   "planned": 640,
+   "actual": 11284
+  }
  },
  {
   "id": "pioneer11",
@@ -369,7 +409,11 @@
   "sources": [
    "https://science.nasa.gov/mission/pioneer-10/"
   ],
-  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/internal_resources/740/Pioneer_plaque_mounted_to_spacecraft.jpeg"
+  "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/internal_resources/740/Pioneer_plaque_mounted_to_spacecraft.jpeg",
+  "life": {
+   "planned": 640,
+   "actual": 8267
+  }
  },
  {
   "id": "near",
@@ -448,6 +492,10 @@
   },
   "sources": [
    "https://science.nasa.gov/mission/kepler/"
-  ]
+  ],
+  "life": {
+   "planned": 1278,
+   "actual": 3524
+  }
  }
 ]
