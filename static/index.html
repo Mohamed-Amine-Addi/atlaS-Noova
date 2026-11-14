@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Abandoned but not Forgotten</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Atkinson+Hyperlegible:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/style.css">
 <script type="importmap">
 {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
@@ -13,20 +13,38 @@
 </head>
 <body>
 <header class="bar">
-<h1>Abandoned but not Forgotten</h1>
+<h1 data-i18n="title">Abandoned but not Forgotten</h1>
 <nav id="worlds" aria-label="Worlds">
-<button data-world="moon" class="on">Moon</button>
-<button data-world="mars">Mars</button>
-<button data-world="space">Deep space</button>
+<button data-world="moon" class="on" data-i18n="moon">Moon</button>
+<button data-world="mars" data-i18n="mars">Mars</button>
+<button data-world="space" data-i18n="space">Deep space</button>
 </nav>
 <div class="tools">
-<button id="ghost" aria-pressed="false">Ghost mode</button>
-<button id="lang" aria-label="Language">FR</button>
+<button id="surprise" data-i18n="surprise">Surprise me</button>
+<button id="ghost" aria-pressed="false" data-i18n="ghost">Ghost mode</button>
+<div id="langs" role="group" aria-label="Language">
+<button data-lang="en" class="on">EN</button>
+<button data-lang="fr">FR</button>
+<button data-lang="ar">AR</button>
+</div>
 </div>
 </header>
 <main>
 <div id="stage" aria-label="3D view"></div>
 <aside id="panel" aria-live="polite"></aside>
+<div id="tip" hidden></div>
+<section id="intro">
+<div class="introbox">
+<h2 data-i18n="title">Abandoned but not Forgotten</h2>
+<p data-i18n="tagline"></p>
+<ul class="stats">
+<li><b id="n1">17</b><span data-i18n="n1">artifacts</span></li>
+<li><b>3</b><span data-i18n="n2">worlds</span></li>
+<li><b>55</b><span data-i18n="n3">years</span></li>
+</ul>
+<button id="begin" data-i18n="begin">Start exploring</button>
+</div>
+</section>
 </main>
 <footer id="timeline" aria-label="Timeline"></footer>
 <script type="module" src="/static/js/main.js"></script>
