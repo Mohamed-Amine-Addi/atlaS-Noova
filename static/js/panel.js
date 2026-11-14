@@ -1,7 +1,7 @@
 import { UI } from "./i18n.js";
 
 function fmt(days, u) {
-  if (days < 60) return `${days} ${u.d}`;
+  if (days < 100) return `${days} ${u.d}`;
   if (days < 730) return `${Math.round(days / 30.4)} ${u.mo}`;
   return `${(days / 365.25).toFixed(1)} ${u.y}`;
 }
@@ -13,10 +13,11 @@ function coords(a) {
   return `${Math.abs(a.lat).toFixed(2)}° ${ns}, ${Math.abs(a.lon).toFixed(2)}° ${ew}`;
 }
 
-function dossier(a, t) {
+function dossier(a, t, lang) {
   const rows = [];
   const c = coords(a);
-  if (c) rows.push(`<div><dt>${t.coords}</dt><dd dir="ltr">${c}</dd></div>`);
+  if (a.place) rows.push(`<div><dt>${t.coords}</dt><dd>${a.place[lang]}</dd></div>`);
+  else if (c) rows.push(`<div><dt>${t.coords}</dt><dd dir="ltr">${c}</dd></div>`);
   if (!a.life) return rows.length ? `<h3>${t.dossier}</h3><dl class="grid">${rows.join("")}</dl>` : "";
   const ratio = Math.round(a.life.actual / a.life.planned);
   const pw = Math.max(2, (a.life.planned / a.life.actual) * 100);
@@ -44,13 +45,13 @@ export function renderPanel(el, artifact, artifacts, lang, onPick, world) {
     el.insertAdjacentHTML("beforeend", `
       ${fig}
       <h2>${artifact.name}</h2>
-      <p class="chips"><span>${artifact.year}</span><span>${artifact.status[lang]}</span></p>
+      <p class="chips"><span>${artifact.yearLabel || artifact.year}</span><span>${artifact.status[lang]}</span></p>
       <p class="story">${artifact.summary[lang]}</p>
-      ${dossier(artifact, t)}
+      ${dossier(artifact, t, lang)}
       <h3>${t.why}</h3>
       <p>${artifact.science[lang]}</p>
       <h3>${t.sources}</h3>
-      ${artifact.sources.map((s) => `<p><a href="${s}" target="_blank" rel="noopener">${s.replace("https://", "")}</a></p>`).join("")}`);
+      ${artifact.sources.map((s) => { const u = s.url || s; const n = s.title || u.replace("https://", ""); return `<p><a href="${u}" target="_blank" rel="noopener">${n}</a></p>`; }).join("")}`);
     const img = el.querySelector("img");
     if (img) img.addEventListener("error", () => img.closest("figure").remove());
   }
