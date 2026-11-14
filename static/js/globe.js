@@ -3,9 +3,9 @@ import * as THREE from "three";
 export const RADIUS = 5;
 
 const LOOKS = {
-  moon: { base: "#8d8d8b", dark: "#5f5f5e", light: "#b9b8b4", craters: 900, glow: 0xaabbd0 },
-  mars: { base: "#b4623a", dark: "#7a3b21", light: "#d98d5f", craters: 500, glow: 0xff9966 },
-  space: { base: "#0c1a33", dark: "#07101f", light: "#1c3763", craters: 0, glow: 0x5fd0c5 }
+  moon: { base: "#8d8d8b", dark: "#5f5f5e", light: "#b9b8b4", craters: 900, map: "/static/textures/moonmap1k.jpg", bump: "/static/textures/moonbump1k.jpg" },
+  mars: { base: "#b4623a", dark: "#7a3b21", light: "#d98d5f", craters: 500, map: "/static/textures/marsmap1k.jpg", bump: "/static/textures/marsbump1k.jpg" },
+  space: { base: "#0c1a33", dark: "#07101f", light: "#1c3763", craters: 0 }
 };
 
 function seeded(seed) {
@@ -34,10 +34,6 @@ function makeTexture(world) {
     g.globalAlpha = 0.5;
     g.fillStyle = look.dark;
     g.beginPath(); g.arc(x, y, r, 0, 7); g.fill();
-    g.globalAlpha = 0.45;
-    g.strokeStyle = look.light;
-    g.lineWidth = Math.max(1, r * 0.15);
-    g.beginPath(); g.arc(x - r * 0.1, y - r * 0.1, r, 0, 7); g.stroke();
   }
   if (world === "space") {
     g.globalAlpha = 0.5;
@@ -49,21 +45,33 @@ function makeTexture(world) {
   g.globalAlpha = 1;
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
-  tex.anisotropy = 8;
   return tex;
 }
 
 export function buildGlobe(world) {
+  const look = LOOKS[world];
   const group = new THREE.Group();
   const mat = new THREE.MeshStandardMaterial({ map: makeTexture(world), roughness: 1, metalness: 0 });
-  const sphere = new THREE.Mesh(new THREE.SphereGeometry(RADIUS, 96, 64), mat);
-  group.add(sphere);
+  if (look.map) {
+    const loader = new THREE.TextureLoader();
+    loader.load(look.map, (tex) => {
+      tex.colorSpace = THREE.SRGBColorSpace;
+      tex.anisotropy = 8;
+      mat.map = tex;
+      mat.needsUpdate = true;
+    });
+    loader.load(look.bump, (tex) => {
+      mat.bumpMap = tex;
+      mat.bumpScale = world === "moon" ? 1.2 : 0.8;
+      mat.needsUpdate = true;
+    });
+  }
+  group.add(new THREE.Mesh(new THREE.SphereGeometry(RADIUS, 128, 96), mat));
   if (world === "mars") {
     group.add(new THREE.Mesh(
-      new THREE.SphereGeometry(RADIUS * 1.03, 64, 48),
-      new THREE.MeshBasicMaterial({ color: LOOKS.mars.glow, transparent: true, opacity: 0.08, side: THREE.BackSide })
+      new THREE.SphereGeometry(RADIUS * 1.04, 64, 48),
+      new THREE.MeshBasicMaterial({ color: 0xff9a6a, transparent: true, opacity: 0.14, side: THREE.BackSide })
     ));
   }
-  group.userData.sphere = sphere;
   return group;
 }
