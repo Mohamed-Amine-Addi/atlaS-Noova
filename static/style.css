@@ -52,3 +52,19 @@ html[dir=rtl] #intro{background:linear-gradient(270deg,#050810f2 30%,#05081000)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 h1{display:flex;align-items:center;gap:12px}
 .logo{width:40px;height:40px;flex:none}
+.grid{display:grid;grid-template-columns:1fr;gap:6px;margin:0 0 12px;border:1px solid var(--line);border-radius:10px;padding:10px 14px;background:#0a1020}
+.grid div{display:flex;justify-content:space-between;gap:12px}
+.grid dt{color:var(--dim);font-size:.9rem}
+.grid dd{margin:0;font-variant-numeric:tabular-nums}
+.life{border:1px solid var(--line);border-radius:10px;padding:14px;background:#0a1020}
+.life .big{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.life .big b{font:700 2.6rem/1 "Fraunces",serif;color:var(--gold)}
+.life .big span{color:var(--dim)}
+.life .row{display:flex;justify-content:space-between;font-size:.92rem;margin-top:8px}
+.life .row em{font-style:normal;font-variant-numeric:tabular-nums}
+.life .track{height:8px;border-radius:99px;background:#16203a;overflow:hidden;margin-top:4px}
+.life .track i{display:block;height:100%;border-radius:99px;animation:grow 1s cubic-bezier(.2,.7,.2,1)}
+html[dir=rtl] .life .track i{margin-inline-start:0}
+.life .plan{background:var(--gold)}
+.life .real{background:var(--teal)}
+@keyframes grow{from{width:0}}
