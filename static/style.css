@@ -50,3 +50,5 @@ html[dir=rtl] #intro{background:linear-gradient(270deg,#050810f2 30%,#05081000)}
 #begin{background:var(--gold);color:#201505;border-color:var(--gold);font-weight:700;padding:12px 28px;font-size:1.05rem}
 @media(max-width:820px){main{grid-template-columns:1fr;grid-template-rows:48vh auto}#panel{border-inline-start:0;border-top:1px solid var(--line)}#intro{background:#050810e6}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+h1{display:flex;align-items:center;gap:12px}
+.logo{width:40px;height:40px;flex:none}
