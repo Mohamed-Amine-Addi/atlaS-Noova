@@ -1,0 +1,30 @@
+:root{--ink:#e9e4d8;--dim:#9aa3b5;--bg:#070b16;--panel:#0e1526;--line:#25304c;--gold:#f2b84b;--teal:#5fd0c5}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{display:grid;grid-template-rows:auto 1fr auto;background:var(--bg);color:var(--ink);font:16px/1.55 "Atkinson Hyperlegible",system-ui,sans-serif}
+.bar{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;padding:10px 20px;border-bottom:1px solid var(--line)}
+h1{font:700 1.3rem "Fraunces",serif;margin:0;flex:1 1 auto}
+nav,.tools{display:flex;gap:6px}
+button{font:inherit;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
+button:hover{border-color:var(--teal)}
+button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+button.on,button[aria-pressed="true"]{background:var(--teal);color:#06121a;border-color:var(--teal)}
+main{display:grid;grid-template-columns:1fr minmax(300px,400px);min-height:0}
+#stage{position:relative;min-height:320px}
+#stage canvas{display:block;width:100%;height:100%}
+#panel{background:var(--panel);border-left:1px solid var(--line);padding:24px;overflow:auto}
+#panel h2{font:700 1.8rem/1.15 "Fraunces",serif;margin:0 0 4px}
+#panel .meta{color:var(--gold);margin:0 0 16px}
+#panel h3{font:700 1rem "Atkinson Hyperlegible",sans-serif;color:var(--teal);margin:20px 0 4px}
+#panel p{max-width:60ch;margin:0 0 8px}
+#panel a{color:var(--dim);word-break:break-all}
+#panel .empty{color:var(--dim)}
+#panel ul.list{list-style:none;padding:0;margin:16px 0 0}
+#panel ul.list button{width:100%;text-align:left;border-radius:8px;margin-bottom:6px}
+#timeline{display:flex;gap:8px;overflow-x:auto;padding:14px 20px;border-top:1px solid var(--line)}
+#timeline button{flex:0 0 auto;display:flex;flex-direction:column;align-items:flex-start;border-radius:10px;line-height:1.2}
+#timeline button b{font:700 1.05rem "Fraunces",serif}
+#timeline button span{font-size:.8rem;color:var(--dim)}
+#timeline button.on span{color:#06121a}
+@media(max-width:800px){main{grid-template-columns:1fr;grid-template-rows:45vh auto}#panel{border-left:0;border-top:1px solid var(--line)}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
