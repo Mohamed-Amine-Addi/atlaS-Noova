@@ -9,6 +9,11 @@ ARTIFACTS = json.loads((BASE / "data" / "artifacts.json").read_text(encoding="ut
 
 app = FastAPI(title="Abandoned but not Forgotten")
 
+@app.middleware("http")
+async def no_cache(request, call_next):
+    response = await call_next(request)
+    response.headers["Cache-Control"] = "no-store"
+    return response
 
 @app.get("/api/artifacts")
 def list_artifacts(world: str | None = None):
