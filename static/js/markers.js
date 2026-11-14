@@ -7,7 +7,7 @@ export function latLonToVec3(lat, lon, r) {
   return new THREE.Vector3(-r * Math.sin(phi) * Math.cos(theta), r * Math.cos(phi), r * Math.sin(phi) * Math.sin(theta));
 }
 
-export function createMarkers(artifacts, camera, dom, onPick) {
+export function createMarkers(artifacts, camera, dom, onPick, onHover) {
   const group = new THREE.Group();
   const items = new Map();
   let ghost = false;
@@ -39,6 +39,16 @@ export function createMarkers(artifacts, camera, dom, onPick) {
     ray.setFromCamera(mouse, camera);
     const hit = ray.intersectObjects([...items.values()].map((i) => i.dot))[0];
     if (hit) onPick(hit.object.userData.id);
+  });
+
+  dom.addEventListener("pointermove", (e) => {
+    if (e.buttons) return;
+    const r = dom.getBoundingClientRect();
+    mouse.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
+    ray.setFromCamera(mouse, camera);
+    const hit = ray.intersectObjects([...items.values()].map((i) => i.dot))[0];
+    dom.style.cursor = hit ? "pointer" : "grab";
+    if (onHover) onHover(hit ? hit.object.userData.id : null, e);
   });
 
   function update(t) {
