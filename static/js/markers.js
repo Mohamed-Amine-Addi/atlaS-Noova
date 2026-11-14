@@ -14,7 +14,7 @@ export function createMarkers(artifacts, camera, dom, onPick, onHover) {
   let selectedId = null;
 
   artifacts.forEach((a) => {
-    const pos = latLonToVec3(a.lat, a.lon, RADIUS * 1.02);
+    const pos = latLonToVec3(a.mlat ?? a.lat, a.mlon ?? a.lon, RADIUS * 1.02);
     const mat = new THREE.MeshBasicMaterial({ color: 0xf2b84b, transparent: true });
     const dot = new THREE.Mesh(new THREE.SphereGeometry(0.11, 20, 16), mat);
     dot.position.copy(pos);
