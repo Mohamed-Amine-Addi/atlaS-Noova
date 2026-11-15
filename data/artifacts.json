@@ -110,6 +110,7 @@
   "lat": 26.13,
   "lon": 3.63,
   "year": 1971,
+    "image": "https://external-preview.redd.it/2Sy4UCLC0Adl9_F9IEneJjKTjmFfwZEFwqXdPbDbfbI.jpg?width=1080&crop=smart&auto=webp&s=6d7dcb04f4f96ec9ba9ea2177ea96bb337a8f72e",
   "status": {
    "en": "Parked forever (three buggies)",
    "fr": "Garé pour toujours (trois buggies)",
@@ -260,6 +261,7 @@
   "lat": -14.57,
   "lon": 175.47,
   "year": 2004,
+   "image": "https://cdnph.upi.com/sv/ph/og/upi/41121247581938/2009/1/ee61639e6b94737f8f71b55edb502dd6/v1.5/Mars-rover-Spirit-still-stuck-in-sand.jpg",
   "status": {
    "en": "Stuck in sand, silent since 2010",
    "fr": "Enlisé dans le sable, muet depuis 2010",
@@ -290,6 +292,7 @@
   "lat": -1.95,
   "lon": -5.53,
   "year": 2004,
+   "image": "https://metro.co.uk/wp-content/uploads/2018/06/sei_16741951.jpg?quality=90&strip=all&w=646",
   "status": {
    "en": "Lost in a dust storm, 2018",
    "fr": "Perdu dans une tempête de poussière, 2018",
@@ -320,6 +323,7 @@
   "lat": 68.22,
   "lon": -125.75,
   "year": 2008,
+   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/3/3475_phx20110310b_PIA13804_phoenix_msp_deck-full2.jpg?w=2000&h=576&fit=clip&crop=faces%2Cfocalpoint",
   "status": {
    "en": "Frozen under polar ice, 2008",
    "fr": "Gelé sous la glace polaire, 2008",
@@ -350,6 +354,7 @@
   "lat": 4.5,
   "lon": 135.62,
   "year": 2018,
+   "image": "https://earthsky.org/upl/2022/05/InSight-solar-panels-dust-April-24-2022.jpg",
   "status": {
    "en": "Dust-covered, ended 2022",
    "fr": "Couvert de poussière, terminé en 2022",
@@ -500,6 +505,7 @@
   "lat": 5,
   "lon": 120,
   "year": 2007,
+   "image": "https://images.theconversation.com/files/73810/original/image-20150304-15267-1vks87u.jpg?ixlib=rb-1.1.0&rect=0%2C95%2C1600%2C1005&q=45&auto=format&w=926&fit=clip",
   "status": {
    "en": "Silent orbit around Ceres",
    "fr": "Orbite silencieuse autour de Cérès",
@@ -526,6 +532,7 @@
   "lat": 0,
   "lon": 200,
   "year": 2009,
+   "image": "https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/images/methode/2018/10/31/584d4222-dcac-11e8-bb7b-3484094c71b9_1280x720_121317.jpg?itok=_vEdv1h7",
   "status": {
    "en": "Out of fuel, drifting since 2018",
    "fr": "Sans carburant, à la dérive depuis 2018",
