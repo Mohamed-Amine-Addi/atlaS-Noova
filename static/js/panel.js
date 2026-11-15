@@ -40,7 +40,7 @@ export function renderPanel(el, artifact, artifacts, lang, onPick, world) {
     el.innerHTML = `<p class="worldintro">${t[world + "Intro"]}</p><p class="empty">${t.pick}</p>`;
   } else {
     const fig = artifact.image
-      ? `<figure><img src="${artifact.image}" alt="${artifact.name}" referrerpolicy="no-referrer"><figcaption>${t.credit}</figcaption></figure>`
+    ? `<figure><img src="${artifact.image}" alt="${artifact.name}" referrerpolicy="no-referrer"></figure>`
       : "";
     el.insertAdjacentHTML("beforeend", `
       ${fig}
