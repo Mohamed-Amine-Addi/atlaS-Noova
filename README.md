@@ -273,39 +273,6 @@ Interface text (buttons, section titles, world introductions) is in `static/js/i
 - **Fonts:** Google Fonts (open licences).
 - **Logo and code:** created for this project.
 
-## Verification status
-
-Please read this before relying on the content.
-
-- **Verified against NASA pages (6 artifacts):** Apollo 11 Eagle, ALSEP Apollo 12, Surveyor 3, Lunar Roving Vehicle, Viking 1 and Sojourner. Their stories, coordinates and source links were checked and corrected.
-- **Not yet verified (11 artifacts):** Viking 2, Spirit, Opportunity, Phoenix, InSight, Ingenuity, Pioneer 10, Pioneer 11, NEAR Shoemaker, Dawn and Kepler were drafted with AI assistance from the challenge resources and still need to be compared with their NASA pages.
-- **Lifetime figures:** designed and actual durations were computed from launch or landing dates and end-of-mission dates. The least certain planned lifetimes are those of Pioneer 11 and Sojourner.
-- **Shared source pages:** as in the challenge list, some artifacts link to a shared mission page (Phoenix links to the InSight page, Viking 2 to Viking 1, Pioneer 11 to Pioneer 10, Spirit and Opportunity share one page). A dedicated page should replace the Phoenix link.
-- **Photo matching:** photos were matched to artifacts by their NASA file names. The Ingenuity photo is the least certain match.
-
-## Known limitations
-
-- Nine artifacts have a NASA photo (Eagle, Surveyor 3, Viking 1, Viking 2, Sojourner, Ingenuity, NEAR, Pioneer 10, Pioneer 11). The rest have none yet.
-- The Deep space view is a schematic sphere, not a true solar-system map. Positions there are approximate.
-- Planet textures are 1K resolution and come from a third-party repository. They look soft when zoomed in.
-- The Lunar Roving Vehicle has one marker (Apollo 15 site) although three buggies exist.
-- The site needs an Internet connection for Three.js, fonts and photos.
-- Tested manually in a desktop browser. There are no automated tests.
-
-## Roadmap
-
-- Replace the textures with NASA's own maps and add a credits footer on the site.
-- Verify the remaining 11 artifacts against their NASA pages.
-- A real solar-system view for deep-space probes, with true distances.
-- Photos or short videos for every artifact.
-- A read-aloud button using the browser's speech synthesis, and a short quiz generated from the same JSON file.
-- A "last transmission" card per machine, clearly labeled as an imagined voice.
-- More artifacts: the other Apollo landers, the remaining Surveyor landers and more Mars missions.
-
-## AI assistance disclosure
-
-Parts of this project were built with the help of an AI assistant (Claude, by Anthropic): code generation, French and Arabic translations, content drafting, the logo and this documentation. Content marked as not yet verified above has not been fact-checked against NASA sources and should be reviewed before being relied on.
-
 ## Credits
 
 Data and imagery: NASA. Created for the NASA hackathon.
